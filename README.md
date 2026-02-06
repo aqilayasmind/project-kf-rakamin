@@ -65,4 +65,5 @@ LEFT JOIN `kimia_farma.Produk` AS produk
   ON transaksi.product_id = produk.product_id;
 ```
 ### Hasil Tabel Analisa
+
 ### Dashboard Data Penjualan Kimia Farma
