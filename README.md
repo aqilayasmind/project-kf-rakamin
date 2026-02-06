@@ -37,7 +37,6 @@ Persentase Gross Laba
 ```
 Nett sales adalah total pendapatan dari penjualan setelah dikurangi potongan berupa diskon. Perhitungan untuk menghasilkan nett sales yakni dengan mengalikan harga pada kf_produk yang telah tersimpan sebagai 'produk' dengan mengurangi nilai 1 dan discount_percentage yang tersimpan di kf_transaksi. Karena data yang tersimpan sudah dalam bentuk desimal, maka tidak perlu dilakukan pembagian 100 setelahnya.
 ```
-```
 Hitung Nett Sales
   produk.price * (1 - transaksi.discount_percentage) AS nett_sales,
 ```
@@ -54,7 +53,7 @@ Hitung Nett Profit
   END AS nett_profit,
 ```
 ```
----- Rating Konsumen Terhadap Transaksi ----
+Rating Konsumen Terhadap Transaksi
   transaksi.rating AS rating_transaksi,
 ```
 Sementara itu, digunakan LEFT JOIN untuk memunculkan dataset seperti transaksi, kantor cabang, dan produk.
@@ -67,4 +66,3 @@ LEFT JOIN `kimia_farma.Produk` AS produk
 ```
 ### Hasil Tabel Analisa
 ### Dashboard Data Penjualan Kimia Farma
-![alt text](https://lookerstudio.google.com/s/gTDR0g7HlpA)
