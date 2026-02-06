@@ -64,7 +64,6 @@ LEFT JOIN `kimia_farma.Cabang` AS cabang
 LEFT JOIN `kimia_farma.Produk` AS produk
   ON transaksi.product_id = produk.product_id;
 ```
-### Hasil Tabel Analisa
-
 ### Dashboard Data Penjualan Kimia Farma
-https://lookerstudio.google.com/s/gTDR0g7HlpA
+Berdasarkan dashboard Performance Analytics Kimia Farma Business periode 2020–2023, terlihat bahwa performa bisnis menunjukkan distribusi yang bervariasi antar wilayah. Provinsi Jawa Barat mendominasi dari sisi total transaksi maupun nett sales dibandingkan provinsi lainnya, menunjukkan kontribusi signifikan terhadap pendapatan perusahaan. Tren kinerja pendapatan per tahun menunjukkan fluktuasi, dengan peningkatan hingga mencapai puncak pada tahun 2022 sebelum mengalami sedikit penurunan pada tahun 2023. Dari sisi profit, distribusi geografis menunjukkan bahwa beberapa wilayah di Pulau Jawa memberikan kontribusi profit yang lebih tinggi dibanding wilayah lainnya. Selain itu, terdapat cabang dengan rating tinggi namun jumlah transaksi relatif rendah, yang mengindikasikan adanya potensi peningkatan aktivitas penjualan pada cabang dengan kualitas layanan yang sudah baik. Secara keseluruhan, analisis ini memberikan gambaran mengenai performa penjualan, distribusi profit, serta peluang optimalisasi kinerja cabang berdasarkan rating dan volume transaksi.
+https://lookerstudio.google.com/u/0/reporting/ee64f046-c42e-4d33-988d-4d6442c41bd6/page/tEnnC
