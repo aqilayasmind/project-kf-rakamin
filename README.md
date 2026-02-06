@@ -1,4 +1,4 @@
-# Kimia Farma Big Data Analytics : Project Based Internship Rakamin
+# Kimia Farma Big Data Analytics : PBI Rakamin
 Pada _project_ ini, Kimia Farma memiliki data penjualan dari tahun 2020 hingga 2023 yang dianalisis untuk memperoleh insight bisnis yang relevan. Analisis dilakukan dengan menyusun tabel analisa yang terdiri dari tren penjualan dari waktu ke waktu, jumlah transaksi, profitabilitas, serta performa cabang dan wilayah berdasarkan rating dan volume transaksi. Hasil analisis ini diharapkan dapat memberikan gambaran menyeluruh mengenai performa bisnis dan membantu pengambilan keputusan yang lebih tepat. Untuk itu, pada tugas akhir ini dilakukan pembuatan dashboard menggunakan Google Looker Studio dari pembentukan query melalui BigQuery.
 ## Dataset
 Terdapat 4 dataset utama yang digunakan mendukung evaluasi performa bisnis Kimia Farma secara menyeluruh.
@@ -67,3 +67,4 @@ LEFT JOIN `kimia_farma.Produk` AS produk
 ### Hasil Tabel Analisa
 
 ### Dashboard Data Penjualan Kimia Farma
+https://lookerstudio.google.com/s/gTDR0g7HlpA
