@@ -6,7 +6,7 @@ Terdapat 4 dataset utama yang digunakan mendukung evaluasi performa bisnis Kimia
 - **kf_inventory** memuat data ketersediaan stok dari beberapa produk.
 - **kf_kantor_cabang** berisi informasi mengenai cabang Kimia Farma, seperti lokasi hingga rating cabang di branch berbeda.
 - **kf_product** menyediakan informasi produk, termasuk detail harga, nama dan jenis produk.
-## Tahapan 1: Tabel Analisa dengan BigQuery
+## Tahap 1: Tabel Analisa dengan BigQuery
 Pada tahapan ini dilakukan impor untuk keempat dataset utama. Selanjutnya, dilakukan proses agregasi data guna menyusun tabel analisis yang mampu memberikan gambaran mengenai penamaan variabel, melakukan perhitungan untuk gross laba dalam bentuk persentase, menghitung nett sales dan profit, serta rating konsumen untuk transaksi.
 ```
 CREATE TABLE `kimia_farma.tabel_analisa` AS
@@ -64,7 +64,7 @@ LEFT JOIN `kimia_farma.Cabang` AS cabang
 LEFT JOIN `kimia_farma.Produk` AS produk
   ON transaksi.product_id = produk.product_id;
 ```
-### Dashboard Data Penjualan Kimia Farma
+## Tahap 2: Dashboard Data Penjualan Kimia Farma
 Berdasarkan dashboard Performance Analytics Kimia Farma Business periode 2020–2023, terlihat bahwa performa bisnis menunjukkan distribusi yang bervariasi antar wilayah. Provinsi Jawa Barat mendominasi dari sisi total transaksi maupun nett sales dibandingkan provinsi lainnya, menunjukkan kontribusi signifikan terhadap pendapatan perusahaan. Tren kinerja pendapatan per tahun menunjukkan fluktuasi, dengan peningkatan hingga mencapai puncak pada tahun 2022 sebelum mengalami sedikit penurunan pada tahun 2023. Dari sisi profit, distribusi geografis menunjukkan bahwa beberapa wilayah di Pulau Jawa memberikan kontribusi profit yang lebih tinggi dibanding wilayah lainnya. Selain itu, terdapat cabang dengan rating tinggi namun jumlah transaksi relatif rendah, yang mengindikasikan adanya potensi peningkatan aktivitas penjualan pada cabang dengan kualitas layanan yang sudah baik. Secara keseluruhan, analisis ini memberikan gambaran mengenai performa penjualan, distribusi profit, serta peluang optimalisasi kinerja cabang berdasarkan rating dan volume transaksi. [click here!](https://lookerstudio.google.com/u/0/reporting/ee64f046-c42e-4d33-988d-4d6442c41bd6/page/tEnnC)
 
 ![Image](https://github.com/user-attachments/assets/522f2b49-c487-4e1f-a14c-3a44fc49a871)
